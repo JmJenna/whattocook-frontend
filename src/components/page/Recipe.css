@@ -1,0 +1,17 @@
+.recipe-img{
+    margin-top: 2rem;
+}
+
+.recipe-title{
+    margin: 2rem;
+    color: tomato;
+}
+
+.instruction_info{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+ul{
+    list-style:none !important;
+}

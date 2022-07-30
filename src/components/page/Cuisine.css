@@ -1,0 +1,22 @@
+.cuisineName{
+    margin: 2rem;
+    color:tomato;
+}
+
+.recipe{
+    text-decoration: none;
+    color:tomato;
+}
+
+.recipe:hover{
+    color: tomato;
+    text-decoration: underline;
+}
+
+.recipeContainer{
+    margin: 2rem;
+}
+
+.recipeTitle{
+    padding: 10px;
+}

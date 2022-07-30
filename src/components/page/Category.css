@@ -1,0 +1,21 @@
+.categoryGroup{
+    margin: 3rem;
+}
+
+.moodTitle{
+    margin-bottom: 3rem;
+}
+
+.getFood{
+    margin: 2rem;
+    background-color: tomato;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: -10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.getFood:hover{
+    text-decoration: underline;
+}

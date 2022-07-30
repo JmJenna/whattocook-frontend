@@ -1,0 +1,17 @@
+.footer{
+    background-color: lightgrey;
+    text-align:center;
+    color: white;
+    padding:3vh;
+    width:100vw;
+    font-size:21px;
+}
+
+.icon {
+    color: white;
+    font-size:25px;
+}
+
+a .icon:hover{
+    color: darkgrey;
+}

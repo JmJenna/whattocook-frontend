@@ -1,0 +1,17 @@
+.searchResult{
+    text-decoration: none;
+    color:tomato;
+}
+
+.searchResult:hover{
+    color: tomato;
+    text-decoration: underline;
+}
+
+.searchCard{
+    margin: 2rem;
+}
+
+.searchTitle{
+    padding: 10px;
+}

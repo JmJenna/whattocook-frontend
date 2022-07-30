@@ -1,0 +1,17 @@
+.randomTitle{
+    color:tomato;
+    margin: 3rem;
+}
+
+.randomdetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    color: tomato;
+    text-decoration: none;
+}
+
+.randomCard{
+    margin-bottom: 3rem;
+}

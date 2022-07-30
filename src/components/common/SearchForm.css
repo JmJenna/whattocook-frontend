@@ -1,0 +1,16 @@
+.search-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchForm input:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.searchTitle{
+  margin-bottom: 3rem;
+  font-weight: bold;
+  font-size: 4rem;
+}
