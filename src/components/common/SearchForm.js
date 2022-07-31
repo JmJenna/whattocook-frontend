@@ -26,7 +26,9 @@ function SearchForm() {
   }
 
   return (
-      <div style={{ backgroundImage:`url(${backGroundImg})`, height: "450px",
+      <div style={{
+        backgroundImage:`url(${backGroundImg})`,
+       height: "450px",
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat'}} 
