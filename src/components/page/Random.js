@@ -1,6 +1,6 @@
 import React , {useEffect , useState} from 'react';
 import getFoodRecipe from '../../api/FoodApi';
-import {  Card , Container , Row } from 'react-bootstrap';
+import {  Card , Container  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Swiper , SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
