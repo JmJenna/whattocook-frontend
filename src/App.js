@@ -90,7 +90,7 @@ function App() {
    */
   async function makeRecipe(detail) {
     try {
-     let token = await UserApi.saveRecipes(detail);
+     await UserApi.saveRecipes(detail);
     } catch (errors) {
       console.error("fail to save a recipe", errors);
       return { success: false, errors };

@@ -1,7 +1,6 @@
 import React , { useEffect , useState , useContext} from 'react';
 import getFoodRecipe from '../../api/FoodApi';
 import UserContext from "../auth/UserContext";
-import UserApi from '../../api/Api';
 import { useParams  } from 'react-router-dom';
 import { Button, Container, Image , Row , Card} from 'react-bootstrap';
 import { MdOutlineSaveAlt } from "react-icons/md";
