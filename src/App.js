@@ -17,32 +17,22 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [token, setToken] = useLocalStorage(TOKEN_STORAGE_ID);
 
-  console.debug(
-      "App",
-      "infoLoaded=", infoLoaded,
-      "currentUser=", currentUser,
-      "token=", token,
-  );
-
   // Load user info from API. Until a user is logged in and they have a token,
   // this should not run. It only needs to re-run when a user logs out, so
   // the value of the token is a dependency for this effect.
 
   useEffect(function loadUserInfo() {
-    console.debug("App useEffect loadUserInfo", "token=", token);
 
     async function getCurrentUser() {
-      if (token) {
+      if(token) {
         try {
-          let { username } = jwt_decode(token);
+          let { username } = jwt_decode(token); 
           // put the token on the Api class so it can use it to call the API.
           UserApi.token = token;
           let currentUser = await UserApi.getCurrentUser(username);
           setCurrentUser(currentUser);
         } catch (err) {
           console.error("App loadUserInfo: problem loading", err);
-          console.log("token", jwt_decode(token));
-          setCurrentUser(null);
         }
       }
       setInfoLoaded(true);
@@ -100,9 +90,7 @@ function App() {
    */
   async function makeRecipe(detail) {
     try {
-      let token = await UserApi.saveRecipes(detail);
-      setToken(token);
-      return { success: true };
+     let token = await UserApi.saveRecipes(detail);
     } catch (errors) {
       console.error("fail to save a recipe", errors);
       return { success: false, errors };

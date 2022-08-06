@@ -73,12 +73,14 @@ class UserApi {
 
   static async saveRecipes(data) {
     let res = await this.request(`recipes`, data, "post");
+    return res.recipe;
   }
 
   /** Delete a recipe */
 
   static async deleteRecipes(id) {
     let res = await this.request(`recipes/${id}`, id, "delete");
+    return res.recipe;
   }
 
 }

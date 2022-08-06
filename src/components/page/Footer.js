@@ -10,7 +10,7 @@ function Footer(){
          <div>2022 <AiOutlineCopyright/> Jeongmin Choi</div>
          <div>
          <a href="https://github.com/JmJenna"><AiFillGithub className='icon'/></a>
-         <a href="https://www.linkedin.com/in/jenna-jeongmin-choi-84716419a"><AiFillLinkedin className='icon'/> </a>
+         <a href="https://www.linkedin.com/in/jmjenna311"><AiFillLinkedin className='icon'/> </a>
          </div>
          </div>
         </div>

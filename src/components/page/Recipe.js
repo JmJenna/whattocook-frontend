@@ -1,6 +1,7 @@
 import React , { useEffect , useState , useContext} from 'react';
 import getFoodRecipe from '../../api/FoodApi';
 import UserContext from "../auth/UserContext";
+import UserApi from '../../api/Api';
 import { useParams  } from 'react-router-dom';
 import { Button, Container, Image , Row , Card} from 'react-bootstrap';
 import { MdOutlineSaveAlt } from "react-icons/md";
@@ -11,13 +12,12 @@ function Recipe(){
 
     const [recipeDetail, setRecipeDetail ] = useState({});
     const [activeBtn , setActiveBtn ] = useState("instructions");    
-    const { currentUser, makeRecipe } = useContext(UserContext);
-    
+    const { currentUser, makeRecipe } = useContext(UserContext);    
     const [ addRecipe , setAddRecipe] = useState({
-        title_id: recipeDetail.id,
-        title:"",
-        img_url:"",
-        username: currentUser.username
+        title_id: "",
+        title: "",
+        img_url: "",
+        username: ""
     })
     
     useEffect(()=>{
@@ -25,20 +25,20 @@ function Recipe(){
             const detailResults = await getFoodRecipe.getDetail(ResId);
             setRecipeDetail(detailResults)
         }
-        recipeRes(params.detail)
+        recipeRes(params.detail);
+    
     },[params.detail])
-    console.log('setAct', activeBtn);
 
 
     async function handleSubmit(e) {
-        e.preventDefault();
-       const saveArecipe = await makeRecipe({
-            title_id : recipeDetail.id,
-            title : recipeDetail.title , 
-            img_url : recipeDetail.image,
-            username: currentUser.username
-        });
-        setAddRecipe(saveArecipe)        
+    e.preventDefault();
+       const saveRecipe = await makeRecipe({
+        title_id: recipeDetail.id,
+        title: recipeDetail.title,
+        img_url: recipeDetail.image,
+        username: currentUser.username
+       });
+       setAddRecipe(saveRecipe)        
       }
 
     return(
@@ -46,14 +46,14 @@ function Recipe(){
             <Container className="text-center">
             <form onSubmit={handleSubmit}>
                 <button style={{margin:'2rem'}} className='btn btn-danger'>
-                    <MdOutlineSaveAlt /> {currentUser.username === addRecipe.username ? 'Save a recipe' : 'Saved'}
+                    <MdOutlineSaveAlt /> Save a recipe
                 </button>
 
             <Row xs={1} md={2} lg={3} className="justify-content-center">   
         
-            <Image src={addRecipe.img_url=recipeDetail.image} className="recipe-img" />   
+            <Image src={recipeDetail.image} className="recipe-img" />   
             </Row>
-            <h3 className="recipe-title">{addRecipe.title=recipeDetail.title}</h3>
+            <h3 className="recipe-title">{recipeDetail.title}</h3>
             </form>
             <Button 
                 size="lg"

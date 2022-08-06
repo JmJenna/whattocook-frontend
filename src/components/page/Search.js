@@ -24,8 +24,8 @@ function Search(){
             <Row xs={1} md={2} lg={3} className="justify-content-center">           
             {searchRecipe.map((item)=>{
                 return(
-                    <Link to={`/recipe/${item.id}`} className='searchResult'>
-                                <Card style={{ width: '18rem' }} className='searchCard text-center'>
+                    <Link to={`/recipe/${item.id}`} className='searchResult text-center'>
+                                <Card style={{ width: '18rem' }} className='searchCard'>
                                 <Card.Img variant="top" src={item.image} />
                                 <Card.Title className='searchTitle'>{item.title}</Card.Title> 
                                 </Card>
