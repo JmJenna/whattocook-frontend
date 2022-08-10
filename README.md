@@ -23,6 +23,6 @@
 
 # 📷 Screenshots
 <img width="943" alt="detail" src="https://user-images.githubusercontent.com/92393205/183820762-0ab7f432-0451-4644-8734-a614a628a6a4.PNG">
-<img width="933" alt="detail2" src="https://user-images.githubusercontent.com/92393205/183820774-7d15af0a-c702-44f6-ab8e-bb92695ed80e.PNG">
+<img width="929" alt="detail2" src="https://user-images.githubusercontent.com/92393205/183821722-1cd662cc-452f-4d36-a791-92a8a6aabf66.PNG">
 <img width="543" alt="detail3" src="https://user-images.githubusercontent.com/92393205/183820777-18dfc62a-d4ce-40ce-8bec-621990980ff2.PNG">
 <img width="669" alt="detail4" src="https://user-images.githubusercontent.com/92393205/183820782-b16de993-5366-49ab-b69a-ddbec11e5d3c.PNG">
