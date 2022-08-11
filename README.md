@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# 🍽 What to cook?
+[✅ WHATTOCOOK-URL ✅](https://what-to-cook-jenna.surge.sh) 
+<p> This is a recipe website. It helps users to reduce time to think about what to cook. </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ⚙️ Technology stack 
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+  ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+  [Whattocook-Backend](https://github.com/JmJenna/whattocook-backend) 
 
-## Available Scripts
+# 💾 Database schema 
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
-In the project directory, you can run:
+![Untitled (1)](https://user-images.githubusercontent.com/92393205/183821571-8fafda5d-7c7e-4697-9759-1bc46e87e9ac.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 🔧 Features
+### - Sign up/Log in
+<p> Users have to sign up or log in to browse this website. Users’ information will be stored in the database,once they sign up. Only authenticated users can have an access to this website. </p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### - search a recipe
+<p> Users are able to search what they want to cook. Also, users can see the recipes by cuisine and random recipes.  </p>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 📷 Screenshots
+<img width="943" alt="detail" src="https://user-images.githubusercontent.com/92393205/183820762-0ab7f432-0451-4644-8734-a614a628a6a4.PNG">
+<img width="929" alt="detail2" src="https://user-images.githubusercontent.com/92393205/183821722-1cd662cc-452f-4d36-a791-92a8a6aabf66.PNG">
+<img width="543" alt="detail3" src="https://user-images.githubusercontent.com/92393205/183820777-18dfc62a-d4ce-40ce-8bec-621990980ff2.PNG">
+<img width="669" alt="detail4" src="https://user-images.githubusercontent.com/92393205/183820782-b16de993-5366-49ab-b69a-ddbec11e5d3c.PNG">
