@@ -15,3 +15,7 @@
 .randomCard{
     margin-bottom: 3rem;
 }
+
+.swiper-button-prev, .swiper-button-next {
+    color: tomato;
+}

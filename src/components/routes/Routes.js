@@ -28,13 +28,13 @@ function Routes({login, signup}){
                       <Signup signup={signup}/>
                     </Route>
 
-                    <PrivacyRoute exact path="/cuisine/:type">
+                    <Route exact path="/cuisine/:type">
                       <Cuisine />
-                    </PrivacyRoute>
+                    </Route>
 
-                    <PrivacyRoute exact path="/search/:search">
+                    <Route exact path="/search/:search">
                       <Search />
-                    </PrivacyRoute>
+                    </Route>
 
                     <PrivacyRoute exact path="/recipe/:detail">
                       <Recipe />

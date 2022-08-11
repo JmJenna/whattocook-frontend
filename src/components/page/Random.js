@@ -2,15 +2,22 @@ import React , {useEffect , useState} from 'react';
 import getFoodRecipe from '../../api/FoodApi';
 import {  Card , Container  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Navigation, Pagination, Scrollbar, A11y, Controller } from "swiper";
 import { Swiper , SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import './Random.css';
 
 function Random(){
 
     const [random , setRandom ] = useState([]);
+    const [swiper, setSwiper] = React.useState();
+    const prevRef = React.useRef();
+    const nextRef = React.useRef();
 
     useEffect(() => {
        async function getFoodAPI(){
@@ -40,7 +47,6 @@ function Random(){
                 <Swiper 
                 freeMode={true}
                 grabCursor={true}
-                modules={[FreeMode]}
                 breakpoints={{
                     0:{
                         slidesPerView: 1,
@@ -59,6 +65,19 @@ function Random(){
                         spaceBetween:15
                     },
                 }}
+                modules={[Navigation, Pagination, Scrollbar, A11y, Controller]}
+                className="external-buttons"
+                spaceBetween={24}
+                slidesPerView={1}
+                navigation={{
+                  prevEl: prevRef?.current,
+                  nextEl: nextRef?.current
+                }}
+                updateOnWindowResize
+                observer
+                observeParents
+                initialSlide={2}
+                onSwiper={setSwiper}
                 >
                 {random.map(recipe => {
                     return(               

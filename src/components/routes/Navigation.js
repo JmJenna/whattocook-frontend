@@ -42,7 +42,7 @@ import { Link  } from "react-router-dom";
                       <Nav.Link href="/login">Log in</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                      <Nav.Link href="/signup">Sing up</Nav.Link>
+                      <Nav.Link href="/signup">Sign up</Nav.Link>
                   </Nav.Item>
               </Nav>                      
     );
